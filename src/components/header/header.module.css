@@ -1,0 +1,13 @@
+.container{
+    background-color:#A4DFE3;
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+}
