@@ -1,10 +1,31 @@
+import "./Read.css" 
+
 function Read() {
   
 
     return (
-      <>
+    <>
         
-      </>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </>
     )
   }
   
