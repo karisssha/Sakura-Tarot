@@ -1,15 +1,24 @@
-import logo from '../assets/img/baritaMouse.png'
-import styles from'/src/components/header/header.module.css'
+
+import { Link } from 'react-router'
+import logo from '../../assets/img/baritaMouse.png'
+import styles from'/src/components/header/Header.module.css'
+import ButtonSound from '../header/ButtonSound'
+import information from '../../assets/img/infoButton.png'
 
 function Header() {
   return (
+    <div className={styles.container}>
       <div className={styles.containerLeft}>
         <img src={logo} alt="sakuralogo"/>
-        <Link to={"/"}>Sakura Cards Tarot</link>
+        <Link to={"/"}>Sakura Cards Tarot</Link>
       </div>
       <div className={styles.containerRight}>
-        <button className={styles.botonOnStyle}></button>
+        <a href="/info">
+          <img src={information} alt="Information"/>
+        </a>
+        <button className={styles.ButtonSound}></button>
       </div>
+    </div>
   )
 }
 

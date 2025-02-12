@@ -7,7 +7,33 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding-top: 20px;
     top: 0;
     left: 0;
+}
+.containerLeft{
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    gap: 1px;
+    font-size: 1.6rem;
+   
+}
+
+.logo{
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+.containerRigth{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    gap: 30px;
+    padding-right: 50px;
+}
+.information{
+    display: flex;
+    width: 20px;
+    height: 20px;
 }
