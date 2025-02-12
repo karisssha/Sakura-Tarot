@@ -1,8 +1,6 @@
-# React + Vite
+## ⭐✨ Sakura Tarot ✨🃏
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌬️ Wanna dive deep in your destiny? Sakura tarot is an app that lets you pick from all Sakura's cards and check in what's in your past, your present and see what's in store for your future.
+ 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 
