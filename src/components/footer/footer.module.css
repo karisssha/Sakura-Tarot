@@ -1,4 +1,4 @@
-.footer-container {
+.FooterContainer {
     width: 100%;
     height: 5rem;
     padding: 0;
@@ -9,14 +9,10 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    bottom: 0;
-    
-   
-   
+    bottom: 0;  
 }
 
-p .footer-container {
+p .FooterContainer {
     line-height: 3rem;
     margin: 0;
-   
 }

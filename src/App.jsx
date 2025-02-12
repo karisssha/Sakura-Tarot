@@ -5,7 +5,8 @@ import Home from './pages/home/Home';
 function App() {
     return (
         <>
-      <Footer/>  <Home/>
+      <Footer/>  
+      <Home/>
         </>
     )
 }
