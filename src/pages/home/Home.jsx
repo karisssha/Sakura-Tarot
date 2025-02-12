@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from '/src/pages/home/Home.module.css';
+import styles from '/src/pages/home/home.module.css';
 
 function Home() {
   const [nickname, setNickname] = useState('');
