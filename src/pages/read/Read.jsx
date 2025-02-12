@@ -27,8 +27,7 @@ function Read() {
 
     <section>
       <button>see history</button>
-      <button><img src="./git status
-      src/assets/img/keroIcon.png"></img>save reading</button>
+      <button><img src="./src/assets/img/keroIcon.png"></img>save reading</button>
     </section>
 
 
