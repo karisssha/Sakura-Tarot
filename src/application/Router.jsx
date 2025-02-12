@@ -5,7 +5,7 @@ import Read from '../pages/Read';
 import Favorites from "../pages/Favorites";
 import Info from '../pages/Info';
 
-function RoutePages() {
+function Router() {
     return ( 
     <BrowserRouter>
         <Routes>
@@ -19,4 +19,4 @@ function RoutePages() {
     )
 }
 
-export default RoutePages
+export default Router
