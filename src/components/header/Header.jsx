@@ -1,12 +1,13 @@
 
 import { Link } from 'react-router'
 import logo from '../../assets/img/baritaMouse.png'
-import styles from'/src/components/header/Header.module.css'
-import ButtonSound from '../header/ButtonSound'
+import styles from '../header/Header.module.css'
+import ButtonSound from '../buttonSound/ButtonSound'
 import information from '../../assets/img/infoButton.png'
 
 function Header() {
   return (
+    <>
     <div className={styles.container}>
       <div className={styles.containerLeft}>
         <img src={logo} alt="sakuralogo"/>
@@ -16,9 +17,10 @@ function Header() {
         <a href="/info">
           <img src={information} alt="Information"/>
         </a>
-        <button className={styles.ButtonSound}></button>
+        <ButtonSound/>
       </div>
     </div>
+    </>
   )
 }
 

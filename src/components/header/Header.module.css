@@ -19,12 +19,6 @@
    
 }
 
-.logo{
-    display: flex;
-    width: 20px;
-    height: 20px;
-}
-
 .containerRigth{
     display: flex;
     flex-direction: row;
