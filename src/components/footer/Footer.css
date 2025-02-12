@@ -1,0 +1,22 @@
+.footer-container {
+    width: 100%;
+    height: 5rem;
+    padding: 0;
+    margin: 0;
+    background-color: #FFCEE8;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    
+   
+   
+}
+
+p .footer-container {
+    line-height: 3rem;
+    margin: 0;
+   
+}
