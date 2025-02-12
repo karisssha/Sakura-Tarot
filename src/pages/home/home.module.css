@@ -1,0 +1,129 @@
+.MainContainer {
+  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  padding: 2rem;
+  position: relative;
+  margin-top: 2.5rem;
+}
+
+.Welcome {
+  font-size: 2.5rem;
+  color: #6C1841;
+}
+
+.ContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.TextBubble {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+}
+
+.Cloud {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+}
+
+.BubbleText {
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem;
+  color: #6C1841;
+  text-align: center;
+  padding: 1rem;
+  max-width: 80%;
+}
+
+.InputContainer {
+  display: flex;
+  align-items: center;
+  background-color: #9cd89c;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  height: 2.5rem;
+  justify-content: center;
+  width: 200px;
+}
+
+.InputField {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #F5F5F5;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.ButtonsContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.StartButton {
+  background-color: #D855A0;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  justify-content: center;
+}
+
+.StartButton:hover {
+  background-color: #ff5c9e;
+}
+
+@keyframes flyIn {
+  from {
+    left: -200px;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    left: -100px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Kero {
+  width: 180px;
+  position: absolute;
+  left: -100px;
+  top: 80px;
+  margin-left: -3.7rem;
+  margin-top: -3.5rem;
+  animation: flyIn 1.5s ease-out forwards;
+}
+
+.Sakura {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.Cards {
+  width: 2rem;
+  height: 2rem;
+}
