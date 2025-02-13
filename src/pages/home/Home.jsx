@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from '/src/pages/home/home.module.css';
+import styles from '/src/pages/home/Home.module.css';
 import { FetchCards  } from '/src/services/apiCards';
 
 function Home() {
@@ -16,10 +16,10 @@ function Home() {
 
   const handleStart = async () => {
     try {
-      const cards = await FetchCards ();
-      console.log(cards); 
+      //const cards = await FetchCards (); Deberia ir con la pagina de Cards
+      //console.log(cards); 
       localStorage.setItem('nickname', nickname);
-      navigate('/pages/Cards');
+      navigate('/cards');
     } catch (error) {
       console.error('Error:', error);
     }

@@ -1,0 +1,22 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 420px;
+  width: fit-content;
+  transform: scale(0.6);
+}
+
+.stackContainer {
+  position: relative;
+  margin: 0 auto;
+ 
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  
+}
