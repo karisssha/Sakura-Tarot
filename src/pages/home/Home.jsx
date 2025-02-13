@@ -16,10 +16,10 @@ function Home() {
 
   const handleStart = async () => {
     try {
-      const cards = await FetchCards ();
-      console.log(cards); 
+      //const cards = await FetchCards (); Deberia ir con la pagina de Cards
+      //console.log(cards); 
       localStorage.setItem('nickname', nickname);
-      navigate('/pages/Cards');
+      navigate('/cards');
     } catch (error) {
       console.error('Error:', error);
     }
