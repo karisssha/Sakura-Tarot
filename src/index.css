@@ -1,13 +1,13 @@
 :root {
   font-family: Bellota;
-  line-height: 1.5;
+ 
   font-weight: 400;
 
   
 }
 
 body {
-  background-image: url('/public/background.png');
+  background-image: url('/background.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
