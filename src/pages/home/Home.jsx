@@ -37,7 +37,7 @@ function Home() {
       <div className={styles.ContentWrapper}>
         <img src="src/assets/img/flyingKero.png"  alt="Kero" className={styles.Kero} />
         <div className={styles.TextBubble}>
-          <img src="src/assets/img/cloud.webp" alt="Text Cloud" className={styles.Cloud} />
+          <img src="src/assets/img/cloud.png" alt="Text Cloud" className={styles.Cloud} />
           <p className={styles.BubbleText}>Type a nickname and press start to begin your tarot reading!</p>
         </div>
         <div className={styles.ButtonsContainer}>

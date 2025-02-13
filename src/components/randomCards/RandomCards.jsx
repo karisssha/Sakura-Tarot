@@ -26,15 +26,15 @@ function Cards() {
     <div className={styles.stackContainer}>
       {firstHalf.map((card, index) => (
         <div key={card.id} className={styles.card} style={{ transform: `translateX(${index * 40}px)` }}>
-          <img src={card.cardsReverse.clowReverse} alt={card.spanishName} />
+          <img src={card.cardsReverse.sakuraReverse} alt={card.spanishName} />
         </div>
       ))}
     </div>
 
     <div className={styles.stackContainer}>
       {secondHalf.map((card, index) => (
-        <div key={card.id} className={styles.card} style={{ transform: `translateX(${index * 40}px)` }}>
-          <img src={card.cardsReverse.clowReverse} alt={card.spanishName} />
+        <div key={card.id} className={styles.card} style={{ transform: `translateX(${index * 41.5}px)` }}>
+          <img src={card.cardsReverse.sakuraReverse} alt={card.spanishName} />
         </div>
       ))}
     </div>
