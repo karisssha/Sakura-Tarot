@@ -1,5 +1,5 @@
-.container{
-    background-color:#A4DFE3;
+.container {
+    background-color: #A4DFE3;
     display: flex;
     flex-direction: row;
     z-index: 100;
@@ -10,24 +10,30 @@
     top: 0;
     left: 0;
 }
-.containerLeft{
+
+.containerLeft {
     display: flex;
-    flex-direction: flex-start;
     align-items: center;
-    gap: 1px;
+    gap: 10px;
     font-size: 1.6rem;
-   
 }
 
-.containerRigth{
+.containerRight { 
     display: flex;
     flex-direction: row;
     font-size: 1.2rem;
     gap: 30px;
     padding-right: 50px;
 }
-.information{
-    display: flex;
-    width: 20px;
-    height: 20px;
+
+.infoButton {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: -10px;
 }

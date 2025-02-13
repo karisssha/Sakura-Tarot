@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router'
 import logo from '../../assets/img/baritaMouse.png'
 import styles from '../header/Header.module.css'
@@ -10,12 +9,12 @@ function Header() {
     <>
     <div className={styles.container}>
       <div className={styles.containerLeft}>
-        <img src={logo} alt="sakuralogo"/>
+        <img src={logo} alt="sakuralogo" className={styles.logo}/>
         <Link to={"/"}>Sakura Cards Tarot</Link>
       </div>
       <div className={styles.containerRight}>
         <a href="/info">
-          <img src={information} alt="Information"/>
+          <img src={information} alt="Information" className={styles.infoButton}/>
         </a>
         <ButtonSound/>
       </div>
