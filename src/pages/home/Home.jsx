@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '/src/pages/home/home.module.css';
+import { FetchCards  } from '/src/services/apiCards';
 
 function Home() {
   const [nickname, setNickname] = useState('');
@@ -13,9 +14,15 @@ function Home() {
     }
   }, []);
 
-  const handleStart = () => {
-    localStorage.setItem('nickname', nickname);
-    navigate('/pages/Cards');
+  const handleStart = async () => {
+    try {
+      const cards = await FetchCards ();
+      console.log(cards); 
+      localStorage.setItem('nickname', nickname);
+      navigate('/pages/Cards');
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
   const handleInputChange = (e) => {
