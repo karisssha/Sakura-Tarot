@@ -6,22 +6,22 @@
   border-radius: 20px;
   padding: 8px 12px;
   gap: 6px;
-  min-width: 80px;
-  max-width: 100px;
+  min-width: 120px;
+  max-width: 140px;
   height: auto;
   position: relative;  
-  top: 45px;  
-  left: 95%;
+  top: 91px;  
+  left: 83%;
    z-index: 50; 
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 .dateText {
-  font-size: 14px;
+  font-size: 18px;
   color: white;
   font-weight: bold;
 }
