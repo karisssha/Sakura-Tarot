@@ -1,13 +1,17 @@
 import './App.css'
+import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
-import Home from './pages/home/Home';
+import Router from './application/Router'
 
 function App() {
     return (
-        <>
-      <Footer/>  
-      <Home/>
-        </>
+      <>
+    
+        <Header/>
+        <Router/>
+        <Footer/>  
+       
+      </>
     )
 }
 export default App;

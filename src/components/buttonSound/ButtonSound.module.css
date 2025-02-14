@@ -1,0 +1,14 @@
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+  
+.button img {
+    width: 30px;
+    height: 30px;
+}
+

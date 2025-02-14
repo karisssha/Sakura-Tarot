@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from '/src/pages/home/home.module.css';
+import styles from '/src/pages/home/Home.module.css';
 import { FetchCards  } from '/src/services/apiCards';
 
 function Home() {
@@ -16,10 +16,10 @@ function Home() {
 
   const handleStart = async () => {
     try {
-      const cards = await FetchCards ();
-      console.log(cards); 
+      //const cards = await FetchCards (); Deberia ir con la pagina de Cards
+      //console.log(cards); 
       localStorage.setItem('nickname', nickname);
-      navigate('/pages/Cards');
+      navigate('/cards');
     } catch (error) {
       console.error('Error:', error);
     }
@@ -37,7 +37,7 @@ function Home() {
       <div className={styles.ContentWrapper}>
         <img src="src/assets/img/flyingKero.png"  alt="Kero" className={styles.Kero} />
         <div className={styles.TextBubble}>
-          <img src="src/assets/img/cloud.webp" alt="Text Cloud" className={styles.Cloud} />
+          <img src="src/assets/img/cloud.png" alt="Text Cloud" className={styles.Cloud} />
           <p className={styles.BubbleText}>Type a nickname and press start to begin your tarot reading!</p>
         </div>
         <div className={styles.ButtonsContainer}>

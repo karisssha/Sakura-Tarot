@@ -1,0 +1,42 @@
+.container {
+    background-color: #A4DFE3;
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    
+}
+
+.containerLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+}
+
+.containerRight { 
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.infoButton {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: -10px;
+}
