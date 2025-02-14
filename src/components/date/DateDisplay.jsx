@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Date.module.css";
-import calendarIcon from "../assets/img/calendar.png";
+import styles from "./DateDisplay.module.css";
+
 
 const DateDisplay = () => {
   const today = new Date();
@@ -8,7 +8,7 @@ const DateDisplay = () => {
 
   return (
     <div className={styles.dateContainer}>
-      <img src={calendarIcon} alt="Calendar Icon" className={styles.icon} />
+      <img src="src/assets/img/calendar.png"alt="Calendar Icon" className={styles.icon} />
       <span className={styles.dateText}>{formattedDate}</span>
     </div>
   );

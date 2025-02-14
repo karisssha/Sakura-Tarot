@@ -1,9 +1,13 @@
+import React from "react";
 import RandomCards from "../../components/randomCards/RandomCards";
 import style from "./Cards.module.css";
-
+import DateDisplay from "../../components/date/DateDisplay";
 function Cards() {
   return (
     <>
+    <div className={style.DateDisplay}>
+      <DateDisplay/>
+    </div>
       <div className={style.TextBubble}>
         <img
           src="src/assets/img/cloud.png"
@@ -20,9 +24,8 @@ function Cards() {
         />
       </div>
 
-      
-
       <RandomCards />
+  
     </>
   );
 }

@@ -1,0 +1,27 @@
+.dateContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1ECBD7;
+  border-radius: 20px;
+  padding: 8px 12px;
+  gap: 6px;
+  min-width: 80px;
+  max-width: 100px;
+  height: auto;
+  position: relative;  
+  top: 45px;  
+  left: 95%;
+   z-index: 50; 
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.dateText {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
