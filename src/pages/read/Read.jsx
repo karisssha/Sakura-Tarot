@@ -10,19 +10,28 @@ function Read() {
     <div>Date</div>
     </section>
 
-    <div class="card-read">
-
+    <div class="card-read past">
+<p>PAST</p>
+<img src=""></img>
+<h2 class= "card-past">card name</h2>
+<h3 class="def">card meaning</h3>
     </div>
         
 
 
-    <div class="card-read">
-
+    <div class="card-read present">
+    <p>PRESENT</p>
+    <img src=""></img>
+    <h2 class= "card-present">card name</h2>
+    <h3 class="def">card meaning</h3>
     </div>
 
 
-    <div class="card-read">
-
+    <div class="card-read future">
+    <p>FUTURE</p>
+    <img src=""></img>
+    <h2 class= "card-future">card name</h2>
+    <h3 class="def">card meaning</h3>
     </div>
 
     <section>
