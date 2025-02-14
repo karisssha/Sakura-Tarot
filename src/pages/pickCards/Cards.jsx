@@ -1,11 +1,15 @@
+import React from "react";
 import RandomCards from "../../components/randomCards/RandomCards";
 import style from "./Cards.module.css";
 import ButtonSeeHistory from '../../components/buttons/history/ButtonSeeHistory'
 import ButtonRestart from "../../components/buttons/restart/ButtonRestart";
-
+import DateDisplay from "../../components/date/DateDisplay";
 function Cards() {
   return (
     <>
+    <div className={style.DateDisplay}>
+      <DateDisplay/>
+    </div>
       <div className={style.TextBubble}>
         <img
           src="src/assets/img/cloud.png"
