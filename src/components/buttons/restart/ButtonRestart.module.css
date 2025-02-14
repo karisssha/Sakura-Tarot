@@ -1,5 +1,5 @@
-.SeeHistory{
-    background-color: #82CCBD;
+.Restart{
+    background-color: #D855A0;
     color: white;
     padding: 0.5rem 1.5rem;
     border: none;
@@ -16,15 +16,15 @@
     height: 3rem;
     }
 
-.SmallKero {
+.SakuraFlower {
     display:flex;
     align-self: flex-start;
     width: 3.5rem;
-    height: 2.5rem;
-    transform: translate(-130px, -3px);
+    height: 3.5rem;
+    transform: translate(-100px, -12px);
 }
 
 .Text{
     font-family: Bellota;
-    transform: translate(56px, -3px);
+    transform: translate(42px, -3px);
 }   
