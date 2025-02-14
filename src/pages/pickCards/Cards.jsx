@@ -2,9 +2,14 @@ import React from "react";
 import RandomCards from "../../components/randomCards/RandomCards";
 import style from "./Cards.module.css";
 import DateDisplay from "../../components/date/DateDisplay";
+import NicknameDisplay from "../../components/nickName/nickName";
+
 function Cards() {
   return (
     <>
+    <div className={style.NicknameDisplay}>
+    <NicknameDisplay/>
+    </div>
     <div className={style.DateDisplay}>
       <DateDisplay/>
     </div>

@@ -128,3 +128,43 @@
   width: 2rem;
   height: 2rem;
 }
+
+.AlertOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.AlertBox {
+  background: #FFCEE8;
+  color: #6C1841;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: #6C1841;
+  border-width: 2rem;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.AlertBox button {
+  background: #D855A0;
+  color: #FAF1FA;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.AlertBox button:hover {
+  background: #c1448a;
+}
