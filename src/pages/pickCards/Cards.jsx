@@ -1,5 +1,7 @@
 import RandomCards from "../../components/randomCards/RandomCards";
 import style from "./Cards.module.css";
+import ButtonSeeHistory from '../../components/buttons/history/ButtonSeeHistory'
+import ButtonRestart from "../../components/buttons/restart/ButtonRestart";
 
 function Cards() {
   return (
@@ -20,9 +22,12 @@ function Cards() {
         />
       </div>
 
-      
-
       <RandomCards />
+
+      <div className= {style.buttonContainer}>
+      <ButtonSeeHistory/>
+      <ButtonRestart/>
+      </div>
     </>
   );
 }

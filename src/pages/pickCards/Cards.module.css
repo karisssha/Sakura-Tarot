@@ -28,3 +28,13 @@
   -webkit-line-clamp: 3;
   font-size: 18px;  
 }
+
+
+.buttonContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: absolute; 
+  bottom: 10rem; 
+}
