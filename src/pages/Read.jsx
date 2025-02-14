@@ -1,12 +1,13 @@
-function Read() {
-  
+import ButtonSaveReading from "../components/buttons/save/ButtonSaveReading"
+import styles from "./Read.module.css"
 
-    return (
-      <>
-        
-      </>
-    )
-  }
-  
-  export default Read
+function Read() {
+  return (
+    <div className={styles.container}>
+      <ButtonSaveReading/>
+    </div>
+  )
+}
+
+export default Read
   
