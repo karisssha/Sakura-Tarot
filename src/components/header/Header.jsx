@@ -4,9 +4,8 @@ import styles from '../header/Header.module.css'
 import ButtonSound from '../buttonSound/ButtonSound'
 import information from '../../assets/img/infoButton.png'
 
-function Header() {
+function Header({ isPlaying, toggleSound }) {
   return (
-    <>
     <div className={styles.container}>
       <div className={styles.containerLeft}>
         <img src={logo} alt="sakuralogo" className={styles.logo}/>
@@ -16,10 +15,9 @@ function Header() {
         <a href="/info">
           <img src={information} alt="Information" className={styles.infoButton}/>
         </a>
-        <ButtonSound/>
+        <ButtonSound isPlaying={isPlaying} toggleSound={toggleSound}/>
       </div>
     </div>
-    </>
   )
 }
 
