@@ -25,14 +25,11 @@ function Cards() {
     setClickCount(newClickCount);
 
     if (newClickCount === 3) {
-      // Seleccionar 3 cartas aleatorias
       const shuffledCards = [...cards].sort(() => Math.random() - 0.5);
       const selectedCards = shuffledCards.slice(0, 3);
       
-      // Guardar en localStorage
       localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
-      
-      // Navegar a la página de lectura
+  
       setTimeout(() => {
         navigate('/read');
       }, 1000);
