@@ -1,13 +1,14 @@
 import "./Read.css" 
 import { useEffect, useState } from 'react';
-//import {Cards} from "../src/components/randomCards/RandomCards.jxs";
+import ButtonSaveReading from "../../components/buttons/save/ButtonSaveReading";
+import ButtonSeeHistory from "../../components/buttons/history/ButtonSeeHistory";
+import DateDisplay from "../../components/date/DateDisplay";
+
 
 function Read() {
-
   const [selectedCards, setSelectedCards] = useState([]);
 
   useEffect(() => {
-   
     const storedCards = JSON.parse(localStorage.getItem('selectedCards'));
     if (storedCards) {
       setSelectedCards(storedCards);
@@ -16,19 +17,15 @@ function Read() {
   
     return (
     <>
-    <main className="containerRead">
-    <section >
-    <div>Input Name</div>
-    <div>Date</div>
-    </section>
-
-    <div className="cards">
+    <DateDisplay/>
+      <main className="containerRead">
+       <div className="cards">
           {selectedCards.length > 0 ? (
             selectedCards.map((card, index) => (
               <div key={index} className="cardRead">
                 <p>{index === 0 ? "PAST" : index === 1 ? "PRESENT" : "FUTURE"}</p>
-                <img src={card.imageUrl} alt={card.name} />
-                <h2 className={`cardRead.${index === 0 ? 'Past' : index === 1 ? 'Present' : 'Future'}`}>{card.name}</h2>
+                <img src={card.sakuraCard} alt={card.englishName} />
+                <h2 className={`cardRead.${index === 0 ? 'Past' : index === 1 ? 'Present' : 'Future'}`}>{card.englishName}</h2>
                 <h3 className="def">{card.meaning}</h3>
               </div>
             ))
@@ -36,29 +33,10 @@ function Read() {
             <p>No cards selected</p>
           )}
         </div>
-        
-
-
-   
-    <section>
-      <button>see history</button>
-      <button><img src=""></img>save reading</button>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div className="ContainerButtons">
+      <ButtonSeeHistory/>
+      <ButtonSaveReading/>
+      </div>
     </main>
     </>
     )
