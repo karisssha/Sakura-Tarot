@@ -1,46 +1,48 @@
 import "./Read.css" 
-import {handleCardClick} from ""
+import { useEffect, useState } from 'react';
+//import {Cards} from "../src/components/randomCards/RandomCards.jxs";
 
 function Read() {
-  
 
+  const [selectedCards, setSelectedCards] = useState([]);
+
+  useEffect(() => {
+   
+    const storedCards = JSON.parse(localStorage.getItem('selectedCards'));
+    if (storedCards) {
+      setSelectedCards(storedCards);
+    }
+  }, []);
+  
     return (
     <>
     <main className="containerRead">
-    <section className={cred}>
+    <section >
     <div>Input Name</div>
     <div>Date</div>
     </section>
 
-<div className="readCards">
-    <div className={cardRead}>
-<p>PAST</p>
-<img src=""></img>
-<h2 className= {cardRead.Past}>card name</h2>
-<h3 className={def}>card meaning</h3>
-    </div>
+    <div className="cards">
+          {selectedCards.length > 0 ? (
+            selectedCards.map((card, index) => (
+              <div key={index} className="cardRead">
+                <p>{index === 0 ? "PAST" : index === 1 ? "PRESENT" : "FUTURE"}</p>
+                <img src={card.imageUrl} alt={card.name} />
+                <h2 className={`cardRead.${index === 0 ? 'Past' : index === 1 ? 'Present' : 'Future'}`}>{card.name}</h2>
+                <h3 className="def">{card.meaning}</h3>
+              </div>
+            ))
+          ) : (
+            <p>No cards selected</p>
+          )}
+        </div>
         
 
 
-    <div className={cardRead}>
-    <p>PRESENT</p>
-    <img src=""></img>
-    <h2 className= {cardRead.Present}>card name</h2>
-    <h3 className={def}>card meaning</h3>
-    </div>
-
-
-    <div className={cardRead}>
-    <p>FUTURE</p>
-    <img src=""></img>
-    <h2 className= {cardRead.Future}>card name</h2>
-    <h3 className={def}>card meaning</h3>
-    </div>
-
-    </div>
+   
     <section>
       <button>see history</button>
-      <button><img src="./src/assets/img/keroIcon.png"></img>save reading</button>
+      <button><img src=""></img>save reading</button>
     </section>
 
 

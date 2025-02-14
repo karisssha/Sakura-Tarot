@@ -3,7 +3,16 @@ display: block;
 
 }
 
-.readCards {
-    display: flex;
-    justify-content: space-between;
+.cards{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+
+.cardRead {
+    display: block;
+    background-color: pink;
+   align-items: center;
+   border-radius: 10px;
 }
