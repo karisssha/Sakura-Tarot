@@ -1,18 +1,19 @@
-## ⭐✨ Sakura Tarot ✨🃏
+# ⭐✨ Sakura Tarot ✨🃏
 
 🌬️ Wanna dive deep in your destiny? Sakura tarot is an app that lets you pick from all Sakura's cards and check in what's in your past, your present and see what's in store for your future.
- 
- ![Image of start page](image.png)
 
-# 🌟 Project Objectives
+ ![image](https://github.com/user-attachments/assets/bb215945-e328-48cb-8a1d-b517ea791822)
+
+
+## 🌟 Project Objectives
 
 Our goal is to create an application that consumes the Sakura API, which returns a JSON file containing information about the cards. For this project, users will be able to choose 3 cards to read as a horoscope from the Sakura Cards Deck.
 
 Users will select three cards: one for the past, one for the present, and one for the future. After making their selections, they will receive the meaning of each chosen card.
 
-# How to use it:
+## How to use it:
 
-1. Clone repositorio:
+1. Clone repository:
    ```bash
    git clone https://github.com/karisssha/Sakura-Tarot.git
   
@@ -27,7 +28,7 @@ Users will select three cards: one for the past, one for the present, and one fo
    npm run dev
 
 
-# API Endpoints:
+## API Endpoints:
 
 Get all cards: https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/
 
@@ -49,7 +50,7 @@ JSON Server
 
 Axios
 
-# 🛠 Tools
+## 🛠 Tools
 
 Figma
 
