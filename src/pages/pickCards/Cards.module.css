@@ -7,12 +7,12 @@
   display: flex;
   height: 7rem;
   width: 10rem;
-  transform: translate(-77px,-70px);
+  transform: translate(-77px,-93px);
   position: absolute;
 }
 
 .Cloud {
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   height: 9rem;
   width: 25rem;
   position: relative;
@@ -21,10 +21,21 @@
 .Text {
   width: 60%;
   position: absolute;
-  top: 36%;  
+  top: 22%;  
   left: 50%;
   text-align: center;
   transform: translate(-50%, 0);
   -webkit-line-clamp: 3;
   font-size: 18px;  
+}
+
+
+.buttonContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: relative; 
+  bottom: -15rem; 
+  max-height: 100px;
 }

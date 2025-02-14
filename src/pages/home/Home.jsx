@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '/src/pages/home/Home.module.css';
-import { FetchCards  } from '/src/services/apiCards';
+
 
 function Home() {
   const [nickname, setNickname] = useState('');
@@ -15,9 +15,7 @@ function Home() {
   }, []);
 
   const handleStart = async () => {
-    try {
-      //const cards = await FetchCards (); Deberia ir con la pagina de Cards
-      //console.log(cards); 
+    try { 
       localStorage.setItem('nickname', nickname);
       navigate('/cards');
     } catch (error) {

@@ -20,7 +20,8 @@ function Cards() {
     getCards();
   }, []);
 
-  const handleCardClick = () => {
+  const handleCardClick = (card) => {
+    console.log(card)
     const newClickCount = clickCount + 1;
     setClickCount(newClickCount);
 
@@ -48,7 +49,7 @@ function Cards() {
             key={card.id} 
             className={styles.card}
             style={{ transform: `translateX(${index * 40}px)` }}
-            onClick={handleCardClick}
+            onClick={()=> handleCardClick(card)}
           >
             <img src={card.cardsReverse.sakuraReverse} alt={card.spanishName} />
           </div>
@@ -61,7 +62,7 @@ function Cards() {
             key={card.id} 
             className={styles.card}
             style={{ transform: `translateX(${index * 41.5}px)` }}
-            onClick={handleCardClick}
+            onClick={()=> handleCardClick(card)}
           >
             <img src={card.cardsReverse.sakuraReverse} alt={card.spanishName} />
           </div>
