@@ -1,39 +1,43 @@
 import "./Read.css" 
+import {handleCardClick} from ""
 
 function Read() {
   
 
     return (
     <>
-    <section class="cred">
+    <main className="containerRead">
+    <section className={cred}>
     <div>Input Name</div>
     <div>Date</div>
     </section>
 
-    <div class="card-read past">
+<div className="readCards">
+    <div className={cardRead}>
 <p>PAST</p>
 <img src=""></img>
-<h2 class= "card-past">card name</h2>
-<h3 class="def">card meaning</h3>
+<h2 className= {cardRead.Past}>card name</h2>
+<h3 className={def}>card meaning</h3>
     </div>
         
 
 
-    <div class="card-read present">
+    <div className={cardRead}>
     <p>PRESENT</p>
     <img src=""></img>
-    <h2 class= "card-present">card name</h2>
-    <h3 class="def">card meaning</h3>
+    <h2 className= {cardRead.Present}>card name</h2>
+    <h3 className={def}>card meaning</h3>
     </div>
 
 
-    <div class="card-read future">
+    <div className={cardRead}>
     <p>FUTURE</p>
     <img src=""></img>
-    <h2 class= "card-future">card name</h2>
-    <h3 class="def">card meaning</h3>
+    <h2 className= {cardRead.Future}>card name</h2>
+    <h3 className={def}>card meaning</h3>
     </div>
 
+    </div>
     <section>
       <button>see history</button>
       <button><img src="./src/assets/img/keroIcon.png"></img>save reading</button>
@@ -53,7 +57,7 @@ function Read() {
 
 
 
-        
+    </main>
     </>
     )
   }
