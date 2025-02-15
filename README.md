@@ -12,7 +12,7 @@
 
 Our goal is to create an application that consumes the Sakura API, which returns a JSON file containing information about the cards. For this project, users will be able to choose 3 cards to read as a horoscope from the Sakura Cards Deck.
 
-Users will select three cards: one for the past, one for the present, and one for the future. After making their selections, they will receive the meaning of each chosen card.
+Users will select three cards: one for the past, one for the present, and one for the future. After making their selections, they will receive the meaning of each chosen card and save it for future references. Also, you can delete your reading history and edit your input name.
 
 ## How to use it:
 
