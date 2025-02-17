@@ -33,6 +33,6 @@
 
 .selected {
   transform: translateY(-20px);
-  transition: transform 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
   z-index: 15;
 }
