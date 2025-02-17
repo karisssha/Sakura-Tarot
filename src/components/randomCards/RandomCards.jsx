@@ -6,6 +6,7 @@ import styles from "./RandomCards.module.css";
 function Cards() {
   const [cards, setCards] = useState([]);
   const [clickCount, setClickCount] = useState(0);
+  const [selectedCards, setSelectedCards] = useState([]); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,7 +22,10 @@ function Cards() {
   }, []);
 
   const handleCardClick = (card) => {
-    console.log(card)
+    if (selectedCards.includes(card.id)) return; 
+
+    setSelectedCards([...selectedCards, card.id]); 
+
     const newClickCount = clickCount + 1;
     setClickCount(newClickCount);
 
@@ -48,8 +52,11 @@ function Cards() {
           <div 
             key={card.id} 
             className={styles.card}
-            style={{ transform: `translateX(${index * 40}px)` }}
-            onClick={()=> handleCardClick(card)}
+            style={{
+              transform: `translate(${index * 40}px, ${selectedCards.includes(card.id) ? '-20px' : '0'})`,
+              transition: 'transform 0.3s ease-in-out'
+            }}
+            onClick={() => handleCardClick(card)}
           >
             <img src={card.cardsReverse.sakuraReverse} alt={card.spanishName} />
           </div>
@@ -61,8 +68,11 @@ function Cards() {
           <div 
             key={card.id} 
             className={styles.card}
-            style={{ transform: `translateX(${index * 41.5}px)` }}
-            onClick={()=> handleCardClick(card)}
+            style={{
+              transform: `translate(${index * 41.5}px, ${selectedCards.includes(card.id) ? '-20px' : '0'})`,
+              transition: 'transform 0.3s ease-in-out'
+            }}
+            onClick={() => handleCardClick(card)}
           >
             <img src={card.cardsReverse.sakuraReverse} alt={card.spanishName} />
           </div>
@@ -72,6 +82,5 @@ function Cards() {
   );
 }
 
-
-
 export default Cards;
+
