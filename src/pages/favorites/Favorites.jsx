@@ -5,12 +5,14 @@ import trashIcon from '../../assets/img/thrasher.png'
 import editIcon from '../../assets/img/pencil.png'
 import catIcon from'../../assets/img/catIcon.png'
 import axios from 'axios'
+import ReadingPopup from '../../components/readingPopup/ReadingPopup'
 
 const API_URL = 'http://localhost:3000/readings'
 
 function Favorites() {
     const [readings, setReadings] = useState([])
-
+    const [selectedReading, setSelectedReading] = useState(null)
+    const [showPopup, setShowPopup] = useState(false)
 
     useEffect(() => { axios.get(API_URL) 
       .then(response => { console.log("Data received from API:", response.data);setReadings(response.data) }) 
@@ -61,49 +63,68 @@ function Favorites() {
         
         return `${day}/${month}/${year}`
       }
-     return (
-      <div className={styles.container}>
-      <div className={styles.header}>
-          <h2>Reading List 🔮</h2>
-          <div className={styles.actions}>
-              <button onClick={clearHistory} className={styles.deleteHistory}>
-              <img className={styles.catIcon} src="/src/assets/img/catIcon.png" alt="Delete History" />
-              Delete history
-              </button>
-              <ButtonRestart />
-          </div>
-      </div>
 
-      <div className={styles.readingGrid}>
-          {readings.length > 0 ? (
-              readings.map((reading) => (
-                  <div key={reading.id} className={styles.readingCard}>
-                    <div className={styles.infoContainer}>
-                      <p><strong>Day:</strong> {formatDate(reading.date)}</p>
-                      <p><strong>Name:</strong> {reading.nickname}</p>
-                    </div>
-                    <div className={styles.cardsContainer}>
-                      {reading.cards.map((card, index) => (
-                        <img key={index} src={card.cardsReverse.sakuraReverse} alt={card.spanishName} />
-                      ))}
-                    </div>
-                      <div className={styles.cardActions}>
-                          <button className={styles.editButton}>
-                            <img src={editIcon} alt="Edit" />
-                          </button>
-                          <button onClick={() => removeReading(reading.id)} className={styles.deleteButton}>
-                            <img src={trashIcon} alt="Delete" />
-                          </button>
-                      </div>
-                    </div>
-              ))
-          ) : (
-              <p className={styles.emptyMessage}>No saved readings yet.</p>
-          )}
-      </div>
-  </div>
-);
+      const handleReadingClick = (reading) => {
+        setSelectedReading(reading)
+        setShowPopup(true)
+      }
+
+      return (
+        <div className={styles.container}>
+            <div className={styles.header}>
+                <h2>Reading List 🔮</h2>
+                <div className={styles.actions}>
+                    <button onClick={clearHistory} className={styles.deleteHistory}>
+                    <img className={styles.catIcon} src="/src/assets/img/catIcon.png" alt="Delete History" />
+                    Delete history
+                    </button>
+                    <ButtonRestart />
+                </div>
+            </div>
+
+            <div className={styles.readingGrid}>
+                {readings.length > 0 ? (
+                    readings.map((reading) => (
+                        <div key={reading.id} className={styles.readingCard}>
+                            <div className={styles.infoContainer}>
+                                <p><strong>Day:</strong> {formatDate(reading.date)}</p>
+                                <p><strong>Name:</strong> {reading.nickname}</p>
+                            </div>
+                            <div className={styles.cardsContainer}>
+                                {reading.cards.map((card, index) => (
+                                    <img 
+                                        key={index} 
+                                        src={card.cardsReverse.sakuraReverse} 
+                                        alt={card.spanishName}
+                                        onClick={() => handleReadingClick(reading)}
+                                        style={{ cursor: 'pointer' }}
+                                    />
+                                ))}
+                            </div>
+                            <div className={styles.cardActions}>
+                                <button className={styles.editButton}>
+                                    <img src={editIcon} alt="Edit" />
+                                </button>
+                                <button onClick={() => removeReading(reading.id)} className={styles.deleteButton}>
+                                    <img src={trashIcon} alt="Delete" />
+                                </button>
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <p className={styles.emptyMessage}>No saved readings yet.</p>
+                )}
+            </div>
+
+            {showPopup && selectedReading && (
+                <ReadingPopup 
+                    reading={selectedReading}
+                    onClose={() => setShowPopup(false)}
+                    formatDate={formatDate}
+                />
+            )}
+        </div>
+    );
 }
-
 
 export default Favorites;
