@@ -67,7 +67,7 @@ function Favorites() {
           <h2>Reading List 🔮</h2>
           <div className={styles.actions}>
               <button onClick={clearHistory} className={styles.deleteHistory}>
-              <img src={catIcon} alt="Delete History" />
+              <img className={styles.catIcon} src="/src/assets/img/catIcon.png" alt="Delete History" />
               Delete history
               </button>
               <ButtonRestart />
