@@ -11,7 +11,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 230px;
+    width: min(230px, 80%);
     justify-content: center;
     font-family: inherit;
   }
@@ -43,13 +43,13 @@
   .AlertBox {
     background: #FFCEE8;
     color: #6C1841;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
     border-color: #6C1841;
-    border-width: 2rem;
+    border-width: 0.125rem;
     text-align: center;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: min(300px, 90%);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
   }
   
    
@@ -58,11 +58,11 @@
     background: #D855A0;
     color: #FAF1FA;
     border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    margin-top: 0.625rem;
+    border-radius: 0.313rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
   }
   
    
