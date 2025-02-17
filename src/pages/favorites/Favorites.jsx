@@ -4,6 +4,7 @@ import ButtonRestart from '../../components/buttons/restart/ButtonRestart'
 import trashIcon from '../../assets/img/thrasher.png'
 import editIcon from '../../assets/img/pencil.png'
 import catIcon from'../../assets/img/catIcon.png'
+import axios from 'axios'
 
 const API_URL = 'http://localhost:3000/readings'
 
@@ -11,23 +12,19 @@ function Favorites() {
     const [readings, setReadings] = useState([])
 
 
-    useEffect(() => {
-      fetch(API_URL)
-        .then(response => response.json())
-        .then(data => {
-          console.log("Data received:", data)
-          setReadings(data)})
-        .catch(error => console.error("Error getting the roll:", error))
-    },[])
+    useEffect(() => { axios.get(API_URL) 
+      .then(response => { console.log("Datos recibidos desde API:", response.data);setReadings(response.data); }) 
+      .catch(error => console.error("Error al obtener las tiradas:", error)); }, []);
 
     const clearHistory = () => {
       if (!window.confirm("Are you sure you want to delete all readings?")) return
-        readings.forEach((reading) => {
-          axios.delete(`${API_URL}/${reading.id}`)
-              .catch(error => console.error("Error deleting roll:", error))
-        })
+      
+      readings.forEach((reading) => {
+      axios.delete(`${API_URL}/${reading.id}`)
+      .catch(error => console.error("Error deleting roll:", error))
+      });
   
-      setReadings([]);
+      setReadings([])
     }
 
   const formatDate = (dateString) => {
