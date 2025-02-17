@@ -47,11 +47,17 @@ CSS3
 
 JavaScript
 
-React.js + Vite
+Axios 1.7.9 
 
-JSON Server
+React 18.3.1
 
-Axios
+React-dom 8.3.1
+
+React-router 7.1.5
+
+React-router-dom 7.1.5
+
+Vite 6.0.5
 
 ## 🛠 Tools
 
