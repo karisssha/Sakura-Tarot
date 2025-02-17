@@ -1,11 +1,24 @@
-import React from "react";
-import "./NicknameDisplay.css";
+import React, { useState, useEffect } from "react";
+import Styles from "./NickName.module.css";
 
-const NicknameDisplay = ({ nickname }) => {
+const NicknameDisplay = () => {
+  const [nickname, setNickname] = useState("");
+
+  useEffect(() => {
+    const storedNickname = localStorage.getItem('nickname');
+    setNickname(storedNickname || 'input name');
+  }, []);
+
   return (
-    <div className="nickname-container">
-      <span className="nickname-icon">👤</span>
-      <span className="nickname-text">{nickname}</span>
+    <div className={Styles.nicknameContainer}>
+      <img 
+        src="src/assets/img/sakura.png" 
+        className={Styles.sakura} 
+        alt="sakura" 
+      />
+      <span className={Styles.nicknameText}>
+        {nickname}
+      </span>
     </div>
   );
 };
