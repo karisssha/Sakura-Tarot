@@ -1,8 +1,9 @@
-import "./Read.css" 
+import styles from "./Read.module.css" 
 import { useEffect, useState } from 'react';
 import ButtonSaveReading from "../../components/buttons/save/ButtonSaveReading";
 import ButtonSeeHistory from "../../components/buttons/history/ButtonSeeHistory";
 import DateDisplay from "../../components/date/DateDisplay";
+//import UserName from "../../components/userName/UserName";
 
 
 function Read() {
@@ -17,23 +18,24 @@ function Read() {
   
     return (
     <>
+    
     <DateDisplay/>
-      <main className="containerRead">
-       <div className="cards">
+      <main className={styles.containerRead}>
+       <div className={styles.cards}>
           {selectedCards.length > 0 ? (
             selectedCards.map((card, index) => (
-              <div key={index} className="cardRead">
+              <div key={index} className={styles.cardRead}>
                 <p>{index === 0 ? "PAST" : index === 1 ? "PRESENT" : "FUTURE"}</p>
                 <img src={card.sakuraCard} alt={card.englishName} />
                 <h2 className={`cardRead.${index === 0 ? 'Past' : index === 1 ? 'Present' : 'Future'}`}>{card.englishName}</h2>
-                <h3 className="def">{card.meaning}</h3>
+                <h3 className={styles.def}>{card.meaning}</h3>
               </div>
             ))
           ) : (
             <p>No cards selected</p>
           )}
         </div>
-      <div className="ContainerButtons">
+      <div className={styles.ContainerButtons}>
       <ButtonSeeHistory/>
       <ButtonSaveReading/>
       </div>
@@ -43,4 +45,3 @@ function Read() {
   }
   
   export default Read
-  
