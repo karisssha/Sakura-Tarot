@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router";
 import Home from '../pages/home/Home'; 
 import PickCards from '../pages/pickCards/Cards';
-import Read from '../pages/Read';
-import Favorites from "../pages/Favorites";
+import Read from "../pages/read/Read";
+import Favorites from "../pages/favorites/Favorites";
 import Info from '../pages/Info';
 
 function Router() {
