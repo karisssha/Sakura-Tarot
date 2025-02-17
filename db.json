@@ -1,7 +1,7 @@
 {
   "readings": [
     {
-      "id": 1739802821522,
+      "id": "1739802821522",
       "date": "2025-02-17T14:33:41.522Z",
       "cards": [
         {
@@ -62,7 +62,7 @@
       "nickname": "Moss"
     },
     {
-      "id": 1739802909524,
+      "id": "1739802909524",
       "date": "2025-02-17T14:35:09.524Z",
       "cards": [
         {
@@ -123,7 +123,7 @@
       "nickname": "Moss"
     },
     {
-      "id": 1739804275062,
+      "id": "1739804275062",
       "date": "2025-02-17T14:57:55.062Z",
       "cards": [
         {
@@ -184,7 +184,7 @@
       "nickname": "Moss"
     },
     {
-      "id": 1739804742544,
+      "id": "1739804742544",
       "date": "2025-02-17T15:05:42.544Z",
       "cards": [
         {
@@ -244,7 +244,7 @@
       "nickname": "Moss"
     },
     {
-      "id": 1739804901526,
+      "id": "1739804901526",
       "date": "2025-02-17T15:08:21.526Z",
       "cards": [
         {
@@ -305,7 +305,7 @@
       "nickname": "Jambu"
     },
     {
-      "id": 1739805118908,
+      "id": "1739805118908",
       "date": "2025-02-17T15:11:58.908Z",
       "cards": [
         {
@@ -363,6 +363,67 @@
         }
       ],
       "nickname": "Mario"
+    },
+    {
+      "id": 1739811330301,
+      "date": "2025-02-17T16:55:30.301Z",
+      "cards": [
+        {
+          "id": "48",
+          "cardNumber": 48,
+          "spanishName": "Arena",
+          "englishName": "The Sand",
+          "kanji": "砂",
+          "Rōmaji": "Suna",
+          "appeardManga": "",
+          "appeardAnime": "41",
+          "clowCard": "https://i.ibb.co/dK9q5Np/Arena.jpg",
+          "sakuraCard": "https://i.ibb.co/L8KtZjv/Arena-Sakura.jpg",
+          "meaning": "Simboliza la seguridad y la tranquilidad.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "10",
+          "cardNumber": 10,
+          "spanishName": "Trueno",
+          "englishName": "The Thunder",
+          "kanji": "雷",
+          "Rōmaji": "Kaminari",
+          "appeardManga": "10",
+          "appeardAnime": "8",
+          "clowCard": "https://i.ibb.co/41jrxGB/Trueno.jpg",
+          "sakuraCard": "https://i.ibb.co/1LvxQsH/Trueno-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la parálisis, la energía",
+          "__v": 0
+        },
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0
+        }
+      ],
+      "nickname": "hola"
     }
   ]
 }

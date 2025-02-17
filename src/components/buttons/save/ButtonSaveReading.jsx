@@ -21,7 +21,7 @@ function ButtonSaveReading() {
         nickname: localStorage.getItem('nickname')
       };
 
-      // Hacer la petición POST al backend
+    
       await axios.post('http://localhost:3000/readings', newReading);
 
       setShowAlert(true);
