@@ -2,10 +2,10 @@
 
 🌬️ Wanna dive deep in your destiny? Sakura tarot is an app that lets you pick from all Sakura's cards and check in what's in your past, your present and see what's in store for your future.
 
- ![image](https://github.com/user-attachments/assets/bb215945-e328-48cb-8a1d-b517ea791822)
+ ![image of welcome page](https://github.com/user-attachments/assets/bb215945-e328-48cb-8a1d-b517ea791822)
 
- ![image](https://github.com/user-attachments/assets/6e58b087-9023-4a78-b5e7-8bc902545316)
-
+ ![image of Cards deck](https://github.com/user-attachments/assets/6e58b087-9023-4a78-b5e7-8bc902545316)
+![Image of reading](image-1.png)
 
 
 ## 🌟 Project Objectives
