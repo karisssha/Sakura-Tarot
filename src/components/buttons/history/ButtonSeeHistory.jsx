@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from './ButtonSeeHistory.module.css'
+import { useNavigate } from 'react-router';
 
 
 const ButtonSeeHistory = () => {
+  const navigate = useNavigate();
   const handleClick = () => {
-    console.log("History button clicked");
+    navigate('/favorites');
   };
+
 
   return (
     <button className={styles.SeeHistory} onClick={handleClick}> 

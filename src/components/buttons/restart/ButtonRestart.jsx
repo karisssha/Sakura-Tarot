@@ -4,7 +4,7 @@ import styles from './ButtonRestart.module.css'
 
 const ButtonRestart = () => {
   const handleClick = () => {
-    console.log("Restart button clicked");
+    window.location.reload();
   };
 
   return (
