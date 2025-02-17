@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import ButtonSaveReading from "../../components/buttons/save/ButtonSaveReading";
 import ButtonSeeHistory from "../../components/buttons/history/ButtonSeeHistory";
 import DateDisplay from "../../components/date/DateDisplay";
-//import UserName from "../../components/userName/UserName";
+import NicknameDisplay from "../../components/nickName/nickName";
 
 
 function Read() {
@@ -18,6 +18,8 @@ function Read() {
   
     return (
     <>
+    
+    <NicknameDisplay/>
     
     <DateDisplay/>
       <main className={styles.containerRead}>
