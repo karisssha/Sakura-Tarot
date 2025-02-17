@@ -13,20 +13,46 @@ function Favorites() {
 
 
     useEffect(() => { axios.get(API_URL) 
-      .then(response => { console.log("Datos recibidos desde API:", response.data);setReadings(response.data); }) 
-      .catch(error => console.error("Error al obtener las tiradas:", error)); }, []);
+      .then(response => { console.log("Datos recibidos desde API:", response.data);setReadings(response.data) }) 
+      .catch(error => console.error("Error al obtener las tiradas:", error)); }, [])
 
-    const clearHistory = () => {
-      if (!window.confirm("Are you sure you want to delete all readings?")) return
+      const clearHistory = async () => {
+        if (!window.confirm("Are you sure you want to delete all readings?")) return
       
-      readings.forEach((reading) => {
-      axios.delete(`${API_URL}/${reading.id}`)
-      .catch(error => console.error("Error deleting roll:", error))
-      });
-  
-      setReadings([])
-    }
+        try {
+        
+          for (const reading of readings) {
+            await fetch(`${API_URL}/${reading.id}`, { method: 'DELETE' })
+            console.log(`Tirada con id: ${reading.id} eliminada`)
+          }
+      
+          setReadings([]);
+          console.log("Todas las tiradas fueron eliminadas")
+        } catch (error) {
+          console.error("Error deleting all readings:", error)
+        }
+      }
 
+      const removeReading = async (id) => {
+        console.log(`Intentando borrar la tirada con id: ${id}`)
+      
+        try {
+          
+          const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' })
+      
+          if (!response.ok) {
+            throw new Error(`Error al eliminar: ${response.statusText}`)
+          }
+      
+          console.log(`Tirada con id: ${id} eliminada de la API`)
+          setReadings(prevReadings => prevReadings.filter(reading => reading.id !== id))
+      
+        } catch (error) {
+          console.error("Error deleting roll:", error);
+        }
+      };
+      
+    
   const formatDate = (dateString) => {
     if (!dateString) return "Unknow Date"
 
