@@ -13,8 +13,8 @@ function Favorites() {
 
 
     useEffect(() => { axios.get(API_URL) 
-      .then(response => { console.log("Datos recibidos desde API:", response.data);setReadings(response.data) }) 
-      .catch(error => console.error("Error al obtener las tiradas:", error)); }, [])
+      .then(response => { console.log("Data received from API:", response.data);setReadings(response.data) }) 
+      .catch(error => console.error("Error retrieving rolls:", error)); }, [])
 
       const clearHistory = async () => {
         if (!window.confirm("Are you sure you want to delete all readings?")) return
@@ -23,46 +23,44 @@ function Favorites() {
         
           for (const reading of readings) {
             await fetch(`${API_URL}/${reading.id}`, { method: 'DELETE' })
-            console.log(`Tirada con id: ${reading.id} eliminada`)
+            console.log(`Shot with id: ${reading.id} eliminated`)
           }
       
           setReadings([]);
-          console.log("Todas las tiradas fueron eliminadas")
+          console.log("all the rolls were removed")
         } catch (error) {
           console.error("Error deleting all readings:", error)
         }
       }
 
       const removeReading = async (id) => {
-        console.log(`Intentando borrar la tirada con id: ${id}`)
+        console.log(`Attempting to erase the run with id:${id}`)
       
         try {
           
           const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' })
       
           if (!response.ok) {
-            throw new Error(`Error al eliminar: ${response.statusText}`)
+            throw new Error(`Error when deleting: ${response.statusText}`)
           }
       
-          console.log(`Tirada con id: ${id} eliminada de la API`)
+          console.log(`Shot with id: ${id} removed from API`)
           setReadings(prevReadings => prevReadings.filter(reading => reading.id !== id))
       
         } catch (error) {
-          console.error("Error deleting roll:", error);
+          console.error("Error deleting roll:", error)
         }
-      };
-      
-    
-  const formatDate = (dateString) => {
-    if (!dateString) return "Unknow Date"
-
-    const date = new Date(dateString)
-    const day = date.getDate().toString().padStart(2, '0')
-    const month = (date.getMonth() + 1).toString().padStart(2, '0')
-    const year = date.getFullYear()
-
-    return `${day}/${month}/${year}`
-  }
+      }
+      const formatDate = (dateString) => {
+        if (!dateString) return "Unknown Date"
+        
+        const date = new Date(dateString)
+        const day = date.getDate().toString().padStart(2, '0')
+        const month = (date.getMonth() + 1).toString().padStart(2, '0')
+        const year = date.getFullYear()
+        
+        return `${day}/${month}/${year}`
+      }
      return (
       <div className={styles.container}>
       <div className={styles.header}>
@@ -81,7 +79,7 @@ function Favorites() {
               readings.map((reading) => (
                   <div key={reading.id} className={styles.readingCard}>
                     <div className={styles.infoContainer}>
-                      <p><strong>Day:</strong> {reading.date}</p>
+                      <p><strong>Day:</strong> {formatDate(reading.date)}</p>
                       <p><strong>Name:</strong> {reading.nickname}</p>
                     </div>
                     <div className={styles.cardsContainer}>

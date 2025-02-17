@@ -30,8 +30,8 @@ function ButtonSaveReading() {
         navigate('/favorites');
       }, 2000);
     } catch (error) {
-      console.error('Error al guardar la lectura:', error);
-      alert('No se pudo guardar la lectura. Intenta nuevamente.');
+      console.error('Error saving the reading:', error);
+      alert('The reading could not be saved. Please try again.');
     }
   };
 

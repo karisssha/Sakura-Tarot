@@ -15,7 +15,7 @@ function Cards() {
         const response = await FetchCards();
         setCards(response.data.sort(() => Math.random() - 0.5));
       } catch (error) {
-        console.error("Error obteniendo las cartas:", error);
+        console.error("Error obtaining the cards:", error);
       }
     };
     getCards();

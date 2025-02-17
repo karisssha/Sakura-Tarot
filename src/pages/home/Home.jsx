@@ -24,8 +24,7 @@ function Home() {
     }
 
     try {
-      // const cards = await FetchCards(); // Debería ir con la página de Cards
-      // console.log(cards);
+      
       const today = new Date().toISOString().split('T')[0];
       setCurrentDate(today);
       localStorage.setItem('currentDate', today);
