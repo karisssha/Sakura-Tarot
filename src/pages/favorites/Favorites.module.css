@@ -1,0 +1,121 @@
+.container {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.deleteHistory{
+    background: #7bafff;
+    border: none;
+    font-size: 23px;
+    align-items: center;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    justify-content: center;
+    height: 3rem;
+    
+}
+
+.deleteHistory img {
+    display:flex;
+    align-self: flex-start;
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: translate(-100px, -12px);
+}
+
+.readingGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px; 
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    width: 90%;
+    margin:auto;
+}
+
+.readingCard {
+    background: #ffe4ec;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 75%;
+    max-width: 350px;
+    min-height: 150px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.cardsContainer img {
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cardActions {
+    
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    width:20%;
+    
+}
+
+.cardActions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cardActions img {
+    width: 20px;
+    height: auto;
+}
+.infoContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 25%;
+}
+
+.emptyMessage {
+    font-size: 18px;
+    color: gray;
+    margin-top: 20px;
+}
