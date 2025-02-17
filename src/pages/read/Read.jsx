@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import ButtonSaveReading from "../../components/buttons/save/ButtonSaveReading";
 import ButtonSeeHistory from "../../components/buttons/history/ButtonSeeHistory";
 import DateDisplay from "../../components/date/DateDisplay";
-import NicknameDisplay from "../../components/nickName/nickName";
+import NicknameDisplay from "../../components/nickName/NickName";
 
 
 function Read() {

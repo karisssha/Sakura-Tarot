@@ -4,7 +4,7 @@ import style from "./Cards.module.css";
 import ButtonSeeHistory from '../../components/buttons/history/ButtonSeeHistory'
 import ButtonRestart from "../../components/buttons/restart/ButtonRestart";
 import DateDisplay from "../../components/date/DateDisplay";
-import NicknameDisplay from "../../components/nickName/nickName";
+import NicknameDisplay from "../../components/nickName/NickName";
 
 function Cards() {
   return (

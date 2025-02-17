@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '/src/pages/home/Home.module.css';
-import { FetchCards } from '/src/services/apiCards';
+
 
 function Home() {
   const [nickname, setNickname] = useState(() => localStorage.getItem('nickname') || '');
