@@ -7,6 +7,16 @@
 ![Image of reading](image-1.png)
 
 
+## Prototypes
+Desktop:
+![Prototype Deskptop](image-3.png)
+link: https://shorturl.at/Bx499
+
+Mobile:
+![Prototype Mobile](image-4.png)
+link: https://shorturl.at/bRFqh 
+
+
 ## 🌟 Project Objectives
 
 Our goal is to create an application that consumes the Sakura API, which returns a JSON file containing information about the cards. For this project, users will be able to choose 3 cards to read as a horoscope from the Sakura Cards Deck.
