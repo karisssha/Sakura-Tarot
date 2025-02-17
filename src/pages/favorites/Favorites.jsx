@@ -5,7 +5,7 @@ import trashIcon from '../../assets/img/thrasher.png'
 import editIcon from '../../assets/img/pencil.png'
 import catIcon from'../../assets/img/catIcon.png'
 
-const API_URL = 'http://localhost:3001/readings'
+const API_URL = 'http://localhost:3000/readings'
 
 function Favorites() {
     const [readings, setReadings] = useState([])

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import styles from './ButtonSaveReading.module.css'
 import heartLock from '../../../assets/img/heartLock.png';
 
@@ -8,30 +9,30 @@ function ButtonSaveReading() {
   const [showAlert, setShowAlert] = useState(false);
   const navigate = useNavigate();
 
-  const saveReading = () => {
-    const selectedCards = JSON.parse(localStorage.getItem('selectedCards') || '[]');
-    
+  const saveReading = async () => {
+    try {
+      const selectedCards = JSON.parse(localStorage.getItem('selectedCards') || '[]');
+      console.log('Selected Cards:', selectedCards);
+      
+      const newReading = {
+        id: Date.now(), 
+        date: new Date().toISOString(),
+        cards: selectedCards, 
+        nickname: localStorage.getItem('nickname')
+      };
 
-    const newReading = {
-      id: Date.now(), 
-      date: new Date().toISOString(),
-      cards: selectedCards, 
-      nickname: localStorage.getItem('nickname')
-    };
+      // Hacer la petición POST al backend
+      await axios.post('http://localhost:3000/readings', newReading);
 
-    const existingReadings = JSON.parse(localStorage.getItem('readings') || '[]');
-    
-
-    const updatedReadings = [...existingReadings, newReading];
-    
-
-    localStorage.setItem('readings', JSON.stringify(updatedReadings));
-    
-    setShowAlert(true);
-    setTimeout(() => {
-      setShowAlert(false);
-      navigate('/favorites');
-    }, 2000);
+      setShowAlert(true);
+      setTimeout(() => {
+        setShowAlert(false);
+        navigate('/favorites');
+      }, 2000);
+    } catch (error) {
+      console.error('Error al guardar la lectura:', error);
+      alert('No se pudo guardar la lectura. Intenta nuevamente.');
+    }
   };
 
   return (
