@@ -1,0 +1,137 @@
+.containerRead {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 7rem;
+    margin-top: 2rem;
+    position: relative;
+    overflow-y: auto;
+    height: auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    overflow-y: visible;
+}
+
+.cardRead {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFCEE8;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1.5rem;
+    min-width: 250px;
+    width: min(300px, 30%);
+    min-height: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    scale: 80%;
+}
+
+.cardRead img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.ContainerButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: auto;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .containerRead {
+        min-height: calc(100vh - 12rem);
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardRead {
+        width: min(300px, 90%);
+    }
+}
+
+.container {
+  padding: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #6C1841;
+}
+
+.readingsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.readingCard {
+  background-color: #FFCEE8; 
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date, .nickname {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cardImage {
+  width: 50px; 
+  height: auto;
+}
+
+.buttonContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.deleteButton, .restartButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.deleteButton {
+  background-color: #914129; 
+  color: white;
+}
+
+.restartButton {
+  background-color: #D855A0;
+  color: white;
+}

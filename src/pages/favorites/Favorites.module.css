@@ -1,7 +1,6 @@
 .container {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to right, #fbe4f0, #d8b9e8); /* Fondo pastel */
     min-height: 100vh;
 }
 
@@ -14,78 +13,105 @@
 
 .actions {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
-.deleteHistory, .restart {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 15px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.deleteHistory {
-    background: #ff7b7b;
-    color: white;
-}
-
-.restart {
+.deleteHistory{
     background: #7bafff;
+    border: none;
+    font-size: 23px;
+    align-items: center;
     color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    justify-content: center;
+    height: 3rem;
+    
+}
+
+.deleteHistory img {
+    display:flex;
+    align-self: flex-start;
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: translate(-100px, -12px);
 }
 
 .readingGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px; 
     justify-content: center;
+    align-items: center;
+    padding:20px;
+    width: 90%;
+    margin:auto;
 }
 
 .readingCard {
     background: #ffe4ec;
     padding: 15px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 300px;
+    width: 75%;
+    max-width: 350px;
+    min-height: 150px;
+    height: auto;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
 }
 
 .cardsContainer {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     margin-top: 10px;
+    align-items: center;
 }
 
 .cardsContainer img {
-    width: 60px;
+    width: 40px;
     height: auto;
     border-radius: 10px;
 }
 
 .cardActions {
-    margin-top: 10px;
+    
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: flex-end;
+    width:20%;
+    
 }
 
-.editButton, .deleteButton {
+.cardActions button {
     border: none;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 18px;
+    background: none;
     cursor: pointer;
 }
 
-.editButton {
-    background: #ffc107;
+.cardActions img {
+    width: 20px;
+    height: auto;
 }
-
-.deleteButton {
-    background: #ff5757;
-    color: white;
+.infoContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 25%;
 }
 
 .emptyMessage {

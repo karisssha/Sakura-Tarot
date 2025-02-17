@@ -25,7 +25,7 @@
   left: 50%;
   text-align: center;
   transform: translate(-50%, 0);
-  -webkit-line-clamp: 3;
+  
   font-size: 18px;  
 }
 
@@ -39,3 +39,4 @@
   bottom: -15rem; 
   max-height: 100px;
 }
+
