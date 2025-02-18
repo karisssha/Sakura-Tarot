@@ -37,6 +37,7 @@ function Favorites() {
     const handleUpdateNickname = async (id, newNickname) => {
         try {
             await updateReadingNickname(id, newNickname)
+            newNickname =e.target.newNickname.replace(/[^a-zA-Z]/g, '').slice(0, 12);
             setReadings(readings.map(reading => 
                 reading.id === id 
                     ? { ...reading, nickname: newNickname }
@@ -45,7 +46,7 @@ function Favorites() {
             if (selectedReading && selectedReading.id === id) {
                 setSelectedReading(prev => ({
                     ...prev,
-                    nickname: newNickname
+                    nickname: newNickname 
                 }))
             }
         } catch (error) {

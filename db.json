@@ -59,7 +59,7 @@
           "__v": 0
         }
       ],
-      "nickname": "BUUU"
+      "nickname": "Mario<<<<<<"
     },
     {
       "id": "1739868848664",
@@ -181,7 +181,250 @@
           "__v": 0
         }
       ],
-      "nickname": "petardaaa"
+      "nickname": "Alex"
+    },
+    {
+      "id": "1739883748746",
+      "date": "2025-02-18T13:02:28.746Z",
+      "cards": [
+        {
+          "id": "23",
+          "cardNumber": 23,
+          "spanishName": "Aro",
+          "englishName": "The Loop",
+          "kanji": "輪",
+          "Rōmaji": "Wa",
+          "appeardManga": "",
+          "appeardAnime": "21",
+          "clowCard": "https://i.ibb.co/Tr3ZqDM/Aro.jpg",
+          "sakuraCard": "https://i.ibb.co/mHdYQy5/Aro-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la continuidad, la perseverancia, una prisión.",
+          "__v": 0
+        },
+        {
+          "id": "29",
+          "cardNumber": 29,
+          "spanishName": "Regreso",
+          "englishName": "The Return",
+          "kanji": "戻",
+          "Rōmaji": "Modo",
+          "appeardManga": "",
+          "appeardAnime": "27",
+          "clowCard": "https://i.ibb.co/ctBrqNj/Regreso.jpg",
+          "sakuraCard": "https://i.ibb.co/Hq1H85v/Regreso-Sakura.jpg",
+          "meaning": "Simboliza la repetición de algo pasado, el mirar hacia atrás.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "7",
+          "cardNumber": 7,
+          "spanishName": "Salto",
+          "englishName": "The Jump",
+          "kanji": "跳",
+          "Rōmaji": "Odo",
+          "appeardManga": "1",
+          "appeardAnime": "5",
+          "clowCard": "https://i.ibb.co/BfJYRBK/Salto.jpg",
+          "sakuraCard": "https://i.ibb.co/QdT7ZjS/Salto-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Representa la evasión de los problemas.",
+          "__v": 0
+        }
+      ],
+      "nickname": "Mario"
+    },
+    {
+      "id": "1739883989421",
+      "date": "2025-02-18T13:06:29.421Z",
+      "cards": [
+        {
+          "id": "53",
+          "cardNumber": 53,
+          "spanishName": "El Amor",
+          "englishName": "The Love",
+          "kanji": "愛",
+          "Rōmaji": "Ai",
+          "appeardManga": "",
+          "appeardAnime": "70",
+          "clowCard": "",
+          "sakuraCard": "https://i.ibb.co/tpKcyp0/Amor.jpg",
+          "meaning": " Representa el amor y la amistad.",
+          "__v": 0,
+          "cardsReverse": {
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "14",
+          "cardNumber": 14,
+          "spanishName": "Tiempo",
+          "englishName": "The Time",
+          "kanji": "時",
+          "Rōmaji": "Toki",
+          "appeardManga": "",
+          "appeardAnime": "12",
+          "clowCard": "https://i.ibb.co/nQjGfBQ/Tiempo.jpg",
+          "sakuraCard": "https://i.ibb.co/p4kcRMS/Tiempo-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Simboliza el paso del tiempo, su escasez.",
+          "__v": 0
+        },
+        {
+          "id": "41",
+          "cardNumber": 41,
+          "spanishName": "Equilibrio",
+          "englishName": "The Libra",
+          "kanji": "秤",
+          "Rōmaji": "Hakari",
+          "appeardManga": "",
+          "appeardAnime": "35/36",
+          "clowCard": "https://i.ibb.co/hySQgHY/Equilibrio.jpg",
+          "sakuraCard": "https://i.ibb.co/vJ319Jt/Equilibrio-Sakura.jpg",
+          "meaning": "Simboliza la verdad, la justicia, el balance del bien y el mal, el equilibrio.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ],
+      "nickname": "Mario"
+    },
+    {
+      "id": "1739884081104",
+      "date": "2025-02-18T13:08:01.104Z",
+      "cards": [
+        {
+          "id": "44",
+          "cardNumber": 44,
+          "spanishName": "Voz",
+          "englishName": "The Voice",
+          "kanji": "声",
+          "Rōmaji": "Koe",
+          "appeardManga": "",
+          "appeardAnime": "37",
+          "clowCard": "https://i.ibb.co/B3N6Cxs/Voz.jpg",
+          "sakuraCard": "https://i.ibb.co/dMdGb3n/Voz-Sakura.jpg",
+          "meaning": "Simboliza la autoridad, la convicción.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "17",
+          "cardNumber": 17,
+          "spanishName": "Tormenta",
+          "englishName": "The Storm",
+          "kanji": "嵐",
+          "Rōmaji": "Arashi",
+          "appeardManga": "",
+          "appeardAnime": "15",
+          "clowCard": "https://i.ibb.co/qW0ZdhR/Tormenta.jpg",
+          "sakuraCard": "https://i.ibb.co/CKKCGQj/Tormenta-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el caos, los problemas.",
+          "__v": 0
+        },
+        {
+          "id": "54",
+          "cardNumber": 54,
+          "spanishName": "La Nada",
+          "englishName": "The Nothing",
+          "kanji": "無",
+          "Rōmaji": "Mu",
+          "appeardManga": "",
+          "appeardAnime": "Movie n° 2",
+          "clowCard": "https://i.ibb.co/gPXkCJZ/Nada.jpg",
+          "sakuraCard": "https://i.ibb.co/zG7fpxp/Nada-Sakura.jpg",
+          "meaning": "Simboliza el espacio vacío, la nada, lo negativo.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ],
+      "nickname": "Mario"
+    },
+    {
+      "id": "1739885398192",
+      "date": "2025-02-18T13:29:58.192Z",
+      "cards": [
+        {
+          "id": "23",
+          "cardNumber": 23,
+          "spanishName": "Aro",
+          "englishName": "The Loop",
+          "kanji": "輪",
+          "Rōmaji": "Wa",
+          "appeardManga": "",
+          "appeardAnime": "21",
+          "clowCard": "https://i.ibb.co/Tr3ZqDM/Aro.jpg",
+          "sakuraCard": "https://i.ibb.co/mHdYQy5/Aro-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la continuidad, la perseverancia, una prisión.",
+          "__v": 0
+        },
+        {
+          "id": "1",
+          "cardNumber": 1,
+          "spanishName": "Viento",
+          "englishName": "The Windy",
+          "kanji": "風",
+          "Rōmaji": "Kaze",
+          "appeardManga": "1",
+          "appeardAnime": "1",
+          "clowCard": "https://i.ibb.co/ftvH3CX/Viento.jpg",
+          "sakuraCard": "https://i.ibb.co/k5HVTP7/Viento-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el intelecto, la sabiduría, la meteorología muestra información valiosa.",
+          "__v": 0
+        },
+        {
+          "id": "17",
+          "cardNumber": 17,
+          "spanishName": "Tormenta",
+          "englishName": "The Storm",
+          "kanji": "嵐",
+          "Rōmaji": "Arashi",
+          "appeardManga": "",
+          "appeardAnime": "15",
+          "clowCard": "https://i.ibb.co/qW0ZdhR/Tormenta.jpg",
+          "sakuraCard": "https://i.ibb.co/CKKCGQj/Tormenta-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el caos, los problemas.",
+          "__v": 0
+        }
+      ],
+      "nickname": "Mario"
     }
   ]
 }

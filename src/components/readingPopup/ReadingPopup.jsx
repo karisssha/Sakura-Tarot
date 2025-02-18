@@ -25,7 +25,9 @@ function ReadingPopup({ reading, onClose, formatDate, onUpdateNickname }) {
 
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
+            const value = e.target.value.replace(/[^a-zA-Z]/g, '').slice(0, 12);
             handleSubmit();
+            setNickname(value);
         }
     }
 
