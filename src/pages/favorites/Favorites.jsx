@@ -1,59 +1,53 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Favorites.module.css'
 import ButtonRestart from '../../components/buttons/restart/ButtonRestart'
 import trashIcon from '../../assets/img/thrasher.png'
 import editIcon from '../../assets/img/pencil.png'
-import catIcon from'../../assets/img/catIcon.png'
-import axios from 'axios'
 import ReadingPopup from '../../components/readingPopup/ReadingPopup'
-
-const API_URL = 'http://localhost:3000/readings'
+import catIcon from '../../assets/img/catIcon.png'
+import { getReadings, deleteReading, updateReadingNickname } from '../../services/apiReading'
 
 function Favorites() {
     const [readings, setReadings] = useState([])
     const [selectedReading, setSelectedReading] = useState(null)
     const [showPopup, setShowPopup] = useState(false)
 
-    useEffect(() => { axios.get(API_URL) 
-      .then(response => { console.log("Data received from API:", response.data);setReadings(response.data) }) 
-      .catch(error => console.error("Error retrieving rolls:", error)); }, [])
+    useEffect(() => {
+        loadReadings()
+    }, [])
 
-      const clearHistory = async () => {
-        if (!window.confirm("Are you sure you want to delete all readings?")) return
-      
+    const loadReadings = async () => {
         try {
-        
-          for (const reading of readings) {
-            await fetch(`${API_URL}/${reading.id}`, { method: 'DELETE' })
-            console.log(`Shot with id: ${reading.id} eliminated`)
-          }
-      
-          setReadings([]);
-          console.log("all the rolls were removed")
+            const data = await getReadings()
+            setReadings(data)
         } catch (error) {
-          console.error("Error deleting all readings:", error)
+            console.error('Error loading readings:', error)
         }
-      }
+    }
 
-      const removeReading = async (id) => {
-        console.log(`Attempting to erase the run with id:${id}`)
-      
+    const handleDelete = async (readingId) => {
         try {
-          
-          const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' })
-      
-          if (!response.ok) {
-            throw new Error(`Error when deleting: ${response.statusText}`)
-          }
-      
-          console.log(`Shot with id: ${id} removed from API`)
-          setReadings(prevReadings => prevReadings.filter(reading => reading.id !== id))
-      
+            await deleteReading(String(readingId))
+            setReadings(readings.filter(reading => reading.id !== readingId))
         } catch (error) {
-          console.error("Error deleting roll:", error)
+            console.error('Error deleting reading:', error)
         }
-      }
-      const formatDate = (dateString) => {
+    }
+
+    const handleUpdateNickname = async (id, newNickname) => {
+        try {
+            await updateNickname(id, newNickname)
+            setReadings(readings.map(reading => 
+                reading.id === id 
+                    ? { ...reading, nickname: newNickname }
+                    : reading
+            ))
+        } catch (error) {
+            console.error('Error updating nickname:', error)
+        }
+    }
+
+    const formatDate = (dateString) => {
         if (!dateString) return "Unknown Date"
         
         const date = new Date(dateString)
@@ -62,21 +56,35 @@ function Favorites() {
         const year = date.getFullYear()
         
         return `${day}/${month}/${year}`
-      }
+    }
 
-      const handleReadingClick = (reading) => {
-        setSelectedReading(reading)
-        setShowPopup(true)
-      }
+    const handleReadingClick = (reading) => {
+        setSelectedReading(reading);
+        setShowPopup(true);
+    }
 
-      return (
+    const clearHistory = async () => {
+        if (!window.confirm("Are you sure you want to delete all readings?")) return
+        
+        try {
+            for (const reading of readings) {
+                await deleteReading(String(reading.id))
+            }
+            setReadings([])
+            console.log("all the rolls were removed")
+        } catch (error) {
+            console.error("Error deleting all readings:", error)
+        }
+    }
+
+    return (
         <div className={styles.container}>
             <div className={styles.header}>
                 <h2>Reading List 🔮</h2>
                 <div className={styles.actions}>
                     <button onClick={clearHistory} className={styles.deleteHistory}>
-                    <img className={styles.catIcon} src="/src/assets/img/catIcon.png" alt="Delete History" />
-                    Delete history
+                        <img className={styles.catIcon} src={catIcon} alt="Delete History" />
+                        Delete history
                     </button>
                     <ButtonRestart />
                 </div>
@@ -105,7 +113,7 @@ function Favorites() {
                                 <button className={styles.editButton}>
                                     <img src={editIcon} alt="Edit" />
                                 </button>
-                                <button onClick={() => removeReading(reading.id)} className={styles.deleteButton}>
+                                <button onClick={() => handleDelete(reading.id)} className={styles.deleteButton}>
                                     <img src={trashIcon} alt="Delete" />
                                 </button>
                             </div>

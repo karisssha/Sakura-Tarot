@@ -1,143 +1,39 @@
 {
   "readings": [
     {
-      "id": "1739821156202",
-      "date": "2025-02-17T19:39:16.202Z",
+      "id": "1739840281391",
+      "date": "2025-02-18T00:58:01.391Z",
       "cards": [
         {
-          "id": "19",
-          "cardNumber": 19,
-          "spanishName": "Borrar",
-          "englishName": "The Erase",
-          "kanji": "消",
-          "Rōmaji": "Shō",
-          "appeardManga": "17",
-          "appeardAnime": "17",
-          "clowCard": "https://i.ibb.co/rMRHYLV/Borrar.jpg",
-          "sakuraCard": "https://i.ibb.co/xGT9X0p/Borrar-Sakura.jpg",
+          "id": "22",
+          "cardNumber": 22,
+          "spanishName": "Pelea",
+          "englishName": "The Fight",
+          "kanji": "闘",
+          "Rōmaji": "Tō",
+          "appeardManga": "",
+          "appeardAnime": "20",
+          "clowCard": "https://i.ibb.co/YR210sq/Pelea.jpg",
+          "sakuraCard": "https://i.ibb.co/2h4XJZf/Pelea-Sakura.jpg",
           "cardsReverse": {
             "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
             "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
           },
-          "meaning": "Representa la desaparición, el olvido.",
+          "meaning": "Simboliza la destreza y la lucha.",
           "__v": 0
         },
         {
-          "id": "16",
-          "cardNumber": 16,
-          "spanishName": "Niebla",
-          "englishName": "The Mist",
-          "kanji": "霧",
-          "Rōmaji": "Kiri",
-          "appeardManga": "",
-          "appeardAnime": "14",
-          "clowCard": "https://i.ibb.co/VxtF7LL/Niebla.jpg",
-          "sakuraCard": "https://i.ibb.co/QKSnXnG/Niebla-Sakura.jpg",
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          },
-          "meaning": "Representa la confusión, lo difuso.",
-          "__v": 0
-        },
-        {
-          "id": "46",
-          "cardNumber": 46,
-          "spanishName": "Nube",
-          "englishName": "The Cloud",
-          "kanji": "雲",
-          "Rōmaji": "Kumo",
-          "appeardManga": "",
-          "appeardAnime": "39",
-          "clowCard": "https://i.ibb.co/YydjPX0/Nube.jpg",
-          "sakuraCard": "https://i.ibb.co/wh7w3kG/Nube-Sakura.jpg",
-          "meaning": "Esta carta simboliza incertidumbre.",
-          "__v": 0,
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          }
-        }
-      ],
-      "nickname": "Lara"
-    },
-    {
-      "id": 1739823731263,
-      "date": "2025-02-17T20:22:11.263Z",
-      "cards": [
-        {
-          "id": "51",
-          "cardNumber": 51,
-          "spanishName": "Gemelos",
-          "englishName": "The Twin",
-          "kanji": "双",
-          "Rōmaji": "Sō",
-          "appeardManga": "",
-          "appeardAnime": "43",
-          "clowCard": "https://i.ibb.co/NVc0wX3/Gemelos.jpg",
-          "sakuraCard": "https://i.ibb.co/MBSwTL4/Gemelos-Sakura.jpg",
-          "meaning": " Simbolizan la dualidad, la compañía, la multiplicación.",
-          "__v": 0,
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          }
-        },
-        {
-          "id": "1",
-          "cardNumber": 1,
-          "spanishName": "Viento",
-          "englishName": "The Windy",
-          "kanji": "風",
-          "Rōmaji": "Kaze",
-          "appeardManga": "1",
-          "appeardAnime": "1",
-          "clowCard": "https://i.ibb.co/ftvH3CX/Viento.jpg",
-          "sakuraCard": "https://i.ibb.co/k5HVTP7/Viento-Sakura.jpg",
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          },
-          "meaning": "Simboliza el intelecto, la sabiduría, la meteorología muestra información valiosa.",
-          "__v": 0
-        },
-        {
-          "id": "33",
-          "cardNumber": 33,
-          "spanishName": "Grande",
-          "englishName": "The Big",
-          "kanji": "大",
-          "Rōmaji": "Dai",
-          "appeardManga": "",
-          "appeardAnime": "31",
-          "clowCard": "https://i.ibb.co/gz8Qmfb/Grande.jpg",
-          "sakuraCard": "https://i.ibb.co/J2NYWjS/Grande-Sakura.jpg",
-          "meaning": "Esta carta simboliza el crecimiento, el avance, el éxito.",
-          "__v": 0,
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          }
-        }
-      ],
-      "nickname": "CURCU"
-    },
-    {
-      "id": 1739824260622,
-      "date": "2025-02-17T20:31:00.622Z",
-      "cards": [
-        {
-          "id": "42",
-          "cardNumber": 42,
-          "spanishName": "Atravesar",
-          "englishName": "The Through",
-          "kanji": "抜",
-          "Rōmaji": "Batsu",
+          "id": "41",
+          "cardNumber": 41,
+          "spanishName": "Equilibrio",
+          "englishName": "The Libra",
+          "kanji": "秤",
+          "Rōmaji": "Hakari",
           "appeardManga": "",
           "appeardAnime": "35/36",
-          "clowCard": "https://i.ibb.co/8jk5q45/Atravesar.jpg",
-          "sakuraCard": "https://i.ibb.co/KLPP4CK/Atravesar-Sakura.jpg",
-          "meaning": "Simboliza el camino, el cambio.",
+          "clowCard": "https://i.ibb.co/hySQgHY/Equilibrio.jpg",
+          "sakuraCard": "https://i.ibb.co/vJ319Jt/Equilibrio-Sakura.jpg",
+          "meaning": "Simboliza la verdad, la justicia, el balance del bien y el mal, el equilibrio.",
           "__v": 0,
           "cardsReverse": {
             "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
@@ -145,43 +41,25 @@
           }
         },
         {
-          "id": "47",
-          "cardNumber": 47,
-          "spanishName": "Sueño",
-          "englishName": "The Dream",
-          "kanji": "夢",
-          "Rōmaji": "Yume",
+          "id": "18",
+          "cardNumber": 18,
+          "spanishName": "Flote",
+          "englishName": "The Float",
+          "kanji": "浮",
+          "Rōmaji": "Uka",
           "appeardManga": "",
-          "appeardAnime": "40",
-          "clowCard": "https://i.ibb.co/RYqzvQ2/Sue-o.jpg",
-          "sakuraCard": "https://i.ibb.co/qgCj1mQ/Sue-o-Sakura.jpg",
-          "meaning": " Simboliza el futuro, la adivinación, los sueños premonitorios.",
-          "__v": 0,
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          }
-        },
-        {
-          "id": "24",
-          "cardNumber": 24,
-          "spanishName": "Dormir",
-          "englishName": "The Sleep",
-          "kanji": "眠",
-          "Rōmaji": "Nemuri",
-          "appeardManga": "",
-          "appeardAnime": "22",
-          "clowCard": "https://i.ibb.co/pwNB8mJ/Dormir.jpg",
-          "sakuraCard": "https://i.ibb.co/rGgQfZp/Dormir-Sakura.jpg",
+          "appeardAnime": "15",
+          "clowCard": "https://i.ibb.co/1GVn0SR/Flote.jpg",
+          "sakuraCard": "https://i.ibb.co/0VZ0RGV/Flote-Sakura.jpg",
           "cardsReverse": {
             "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
             "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
           },
-          "meaning": "Simboliza la paralización, el despiste, el descanso.",
+          "meaning": " Simboliza la capacidad de tener una visión general sobre algo, o de evadirse de un problema.",
           "__v": 0
         }
       ],
-      "nickname": "Sakura"
+      "nickname": "BUHA"
     }
   ]
 }

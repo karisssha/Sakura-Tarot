@@ -22,9 +22,9 @@ function Cards() {
   }, []);
 
   const handleCardClick = (card) => {
-    if (selectedCards.includes(card.id)) return; 
+    if (selectedCards.includes(Number(card.id))) return; 
 
-    setSelectedCards([...selectedCards, card.id]); 
+    setSelectedCards([...selectedCards, Number(card.id)]); 
 
     const newClickCount = clickCount + 1;
     setClickCount(newClickCount);
@@ -53,7 +53,7 @@ function Cards() {
             key={card.id} 
             className={styles.card}
             style={{
-              transform: `translate(${index * 40}px, ${selectedCards.includes(card.id) ? '-20px' : '0'})`,
+              transform: `translate(${index * 40}px, ${selectedCards.includes(Number(card.id)) ? '-20px' : '0'})`,
               transition: 'transform 0.3s ease-in-out'
             }}
             onClick={() => handleCardClick(card)}
@@ -69,7 +69,7 @@ function Cards() {
             key={card.id} 
             className={styles.card}
             style={{
-              transform: `translate(${index * 41.5}px, ${selectedCards.includes(card.id) ? '-20px' : '0'})`,
+              transform: `translate(${index * 41.5}px, ${selectedCards.includes(Number(card.id)) ? '-20px' : '0'})`,
               transition: 'transform 0.3s ease-in-out'
             }}
             onClick={() => handleCardClick(card)}
