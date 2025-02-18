@@ -36,12 +36,18 @@ function Favorites() {
 
     const handleUpdateNickname = async (id, newNickname) => {
         try {
-            await updateNickname(id, newNickname)
+            await updateReadingNickname(id, newNickname)
             setReadings(readings.map(reading => 
                 reading.id === id 
                     ? { ...reading, nickname: newNickname }
                     : reading
             ))
+            if (selectedReading && selectedReading.id === id) {
+                setSelectedReading(prev => ({
+                    ...prev,
+                    nickname: newNickname
+                }))
+            }
         } catch (error) {
             console.error('Error updating nickname:', error)
         }
@@ -129,6 +135,7 @@ function Favorites() {
                     reading={selectedReading}
                     onClose={() => setShowPopup(false)}
                     formatDate={formatDate}
+                    onUpdateNickname={handleUpdateNickname}
                 />
             )}
         </div>

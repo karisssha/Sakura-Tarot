@@ -47,3 +47,49 @@
     max-width: 200px;
     height: auto;
 }
+
+.nicknameContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.editContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nicknameInput {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #6C1841;
+}
+
+.saveButton {
+    background: #D855A0;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.displayContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.editButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.editButton img {
+    width: 15px;
+    height: 15px;
+}
